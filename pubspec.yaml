@@ -1,0 +1,92 @@
+name: complaint_app
+description: A new Flutter project.
+
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  iconsax: ^0.0.8
+  sizer: ^2.0.15
+  google_nav_bar: ^5.0.6
+  timelines: ^0.1.0
+  intl: ^0.18.0
+  flutter_switch: ^0.3.2
+  google_maps_flutter: ^2.3.1
+  easy_localization: ^3.0.2
+  shared_preferences: ^2.2.0
+  geolocator: ^9.0.2
+  geocoding: ^2.1.0
+  open_street_map_search_and_pick: ^0.0.17
+  firebase_core: ^2.24.2
+  cloud_firestore: ^4.8.4
+  firebase_storage: ^11.2.5
+  image_picker: ^1.0.2
+  firebase_auth: ^4.7.3
+  pull_to_refresh: ^2.0.0
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.13.1"
+  flutter_native_splash: ^2.2.19
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/complaint_app_logo.png"
+  adaptive_icon_background: "#272323"
+  adaptive_icon_foreground: "assets/images/complaint_app_logo.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+flutter_native_splash:
+  android: true
+  ios: true
+  # color: "#272323"
+  background_image: "assets/images/complaint_bg.png"
+  image: "assets/images/complaint_app_splash.png"
+
+flutter:
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/complaint_bg.png
+    - assets/images/complaint_bg_small.png
+    - assets/images/complaint_app_splash.png
+    - assets/images/complaint_app_logo.png
+    - assets/translations/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
