@@ -11,7 +11,6 @@ The app was designed and developed during my internship program. Thus, the tasks
 - Complaint
 - Profile
 - Home and Setting (incl change password and change language function)
-<br>
 
 2. Programming language:  Dart
 
