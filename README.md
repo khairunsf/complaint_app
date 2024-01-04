@@ -1,16 +1,16 @@
-# complaint_app
+# mycomplaint_app
 
-A new Flutter project.
+<img src="/assets/images/complaint_app_logo.png" alt="app_name" width="250" height="200">
 
-## Getting Started
+MyComplaint mobile application was developed to help the users submits any issues encountered. <br>
+The user for this app is the clients and staffs of the organization. <br>
+App functinalities: <br>
+The app was designed and developed during my internship program. Thus, the tasks for reviewing and updating the complaint status was supposedly be done by the admin in an existing system. Therefore, this app is only for complainants to submits any complaints of the problems they encountered and view the update for the complaints. <br><br>
+Modules:
+- Login and register (incl forgot password function)
+- Complaint
+- Profile
+- Home and Setting (incl change password and change language function)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## More Details
+- [App Interface Design](/document/mycomplaint_app_design.pdf)
