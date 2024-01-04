@@ -11,12 +11,13 @@ The app was designed and developed during my internship program. Thus, the tasks
 - Complaint
 - Profile
 - Home and Setting (incl change password and change language function)
-2. Programming language: 
-- Dart
-3. Frameworks: 
-- Flutter
-4. Database management tool: 
-- Firebase
+<br>
+
+2. Programming language:  Dart
+
+3. Frameworks:  Flutter
+
+4. Database management tool:  Firebase
 
 ## More Details
 - [App Interface Design](/document/mycomplaint_app_design.pdf)
