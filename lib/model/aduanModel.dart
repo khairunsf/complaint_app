@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class AduanModel {
-  final String jabatan;
-  final String daerah;
+  final String cawangan;
+  final String bahagian;
   final String tajuk;
   final String butir;
   final String lokasi;
@@ -19,8 +19,8 @@ class AduanModel {
   late String? userId;
 
   AduanModel(
-      {required this.jabatan,
-      required this.daerah,
+      {required this.cawangan,
+      required this.bahagian,
       required this.tajuk,
       required this.butir,
       required this.lokasi,
@@ -38,8 +38,8 @@ class AduanModel {
 
   toJson() {
     return {
-      "Jabatan Diadu": jabatan,
-      "Daerah Diadu": daerah,
+      "Cawangan Diadu": cawangan,
+      "Bahagian Diadu": bahagian,
       "Tajuk": tajuk,
       "Butir": butir,
       "Lokasi": lokasi,
@@ -58,8 +58,8 @@ class AduanModel {
   }
 
   AduanModel.fromJson(Map<String, dynamic> json)
-      : jabatan = json['Jabatan Diadu'],
-        daerah = json['Daerah Diadu'],
+      : cawangan = json['Cawangan Diadu'],
+        bahagian = json['Bahagian Diadu'],
         tajuk = json['Tajuk'],
         butir = json['Butir'],
         lokasi = json['Lokasi'],

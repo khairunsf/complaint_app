@@ -29,8 +29,8 @@ class ComplainPage extends StatefulWidget {
 
 class _ComplainPageState extends State<ComplainPage> {
   bool isChecked = false;
-  String? selected_jabatan;
-  String? selected_daerah;
+  String? selected_cawangan;
+  String? selected_bahagian;
   final _formKey = GlobalKey<FormState>();
   final tajukCont = TextEditingController();
   final butirCont = TextEditingController();
@@ -41,22 +41,22 @@ class _ComplainPageState extends State<ComplainPage> {
   List<File> selectedImages = [];
 
   //dropdown btn choices
-  final jabatan = [
-    'Jabatan 1',
-    'Jabatan 2',
-    'Jabatan 3',
+  final cawangan = [
+    'Cawangan 1',
+    'Cawangan 2',
+    'Cawangan 3',
   ];
 
-  final daerah = [
-    'Kota Kinabalu',
-    'Lahad Datu',
-    'Papar',
+  final bahagian = [
+    'Human Resource',
+    'Customer Service',
+    'Logistics',
   ];
 
-  DropdownMenuItem<String> buildJabatan(String jabatan) => DropdownMenuItem(
-        value: jabatan,
+  DropdownMenuItem<String> buildCawangan(String cawangan) => DropdownMenuItem(
+        value: cawangan,
         child: Text(
-          jabatan,
+          cawangan,
           style: TextStyle(
             fontFamily: 'Nunito Sans',
             fontSize: 10.sp,
@@ -66,10 +66,10 @@ class _ComplainPageState extends State<ComplainPage> {
         ),
       );
 
-  DropdownMenuItem<String> buildDaerah(String daerah) => DropdownMenuItem(
-        value: daerah,
+  DropdownMenuItem<String> buildBahagian(String bahagian) => DropdownMenuItem(
+        value: bahagian,
         child: Text(
-          daerah,
+          bahagian,
           style: TextStyle(
             fontFamily: 'Nunito Sans',
             fontSize: 10.sp,
@@ -178,21 +178,21 @@ class _ComplainPageState extends State<ComplainPage> {
                     height: 1.h,
                   ),
                   DropDownBtn(
-                    label: 'jabatanDiadu'.tr(),
-                    value: selected_jabatan,
-                    items: jabatan.map(buildJabatan).toList(),
-                    onChanged: (selected_jabatan) => setState(
-                        () => this.selected_jabatan = selected_jabatan),
+                    label: 'cawanganDiadu'.tr(),
+                    value: selected_cawangan,
+                    items: cawangan.map(buildCawangan).toList(),
+                    onChanged: (selected_cawangan) => setState(
+                        () => this.selected_cawangan = selected_cawangan),
                   ),
                   SizedBox(
                     height: 0.5.h,
                   ),
                   DropDownBtn(
-                    label: 'daerahDiadu'.tr(),
-                    value: selected_daerah,
-                    items: daerah.map(buildDaerah).toList(),
-                    onChanged: (selected_daerah) =>
-                        setState(() => this.selected_daerah = selected_daerah),
+                    label: 'bahagianDiadu'.tr(),
+                    value: selected_bahagian,
+                    items: bahagian.map(buildBahagian).toList(),
+                    onChanged: (selected_bahagian) => setState(
+                        () => this.selected_bahagian = selected_bahagian),
                   ),
                   SizedBox(
                     height: 0.5.h,
@@ -453,8 +453,8 @@ class _ComplainPageState extends State<ComplainPage> {
                                             color: Colors.green.shade700)))),
                             onPressed: () {
                               final aduan = AduanModel(
-                                jabatan: selected_jabatan!,
-                                daerah: selected_daerah!,
+                                cawangan: selected_cawangan!,
+                                bahagian: selected_bahagian!,
                                 tajuk: tajukCont.text.trim(),
                                 butir: butirCont.text.trim(),
                                 lokasi: _currentAddress,

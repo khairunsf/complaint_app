@@ -15,8 +15,8 @@ class ComplainDetailsPage extends StatelessWidget {
     required this.status,
     required this.date,
     required this.no_rujukan,
-    required this.jabatan_diadu,
-    required this.daerah_diadu,
+    required this.cawangan_diadu,
+    required this.bahagian_diadu,
     required this.butir_aduan,
     required this.lokasi,
     required this.lat,
@@ -28,8 +28,8 @@ class ComplainDetailsPage extends StatelessWidget {
   String status;
   String date;
   String no_rujukan;
-  String jabatan_diadu;
-  String daerah_diadu;
+  String cawangan_diadu;
+  String bahagian_diadu;
   String butir_aduan;
   String lokasi;
   String lat;
@@ -86,20 +86,20 @@ class ComplainDetailsPage extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      MainTextWidget(label: 'jabatanDiadu'.tr()),
+                      MainTextWidget(label: 'cawanganDiadu'.tr()),
                       SizedBox(
                         width: 1.w,
                       ),
-                      MainTextWidget(label: jabatan_diadu),
+                      MainTextWidget(label: cawangan_diadu),
                     ],
                   ),
                   Row(
                     children: [
-                      MainTextWidget(label: 'daerahDiadu'.tr()),
+                      MainTextWidget(label: 'bahagianDiadu'.tr()),
                       SizedBox(
                         width: 1.w,
                       ),
-                      MainTextWidget(label: daerah_diadu),
+                      MainTextWidget(label: bahagian_diadu),
                     ],
                   ),
                   MainTextWidget(label: 'lampiran'.tr()),

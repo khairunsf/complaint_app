@@ -145,13 +145,13 @@ class _HomePageState extends State<HomePage> {
                       width: 4.w,
                     ),
                     ClipOval(
-                  child: Image.asset(
-                    AssetsManager.appLogo,
-                    height: 7.h,
-                    width: 16.w,
-                    fit: BoxFit.cover,
-                  ),
-                ),
+                      child: Image.asset(
+                        AssetsManager.appLogo,
+                        height: 7.h,
+                        width: 16.w,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                     SizedBox(
                       width: 1.h,
                     ),
@@ -336,11 +336,11 @@ class _HomePageState extends State<HomePage> {
                                             _foundAduan[i]["Tarikh"].toString(),
                                         no_rujukan: _foundAduan[i]["No Rujukan"]
                                             .toString(),
-                                        jabatan_diadu: _foundAduan[i]
-                                                ["Jabatan Diadu"]
+                                        cawangan_diadu: _foundAduan[i]
+                                                ["Cawangan Diadu"]
                                             .toString(),
-                                        daerah_diadu: _foundAduan[i]
-                                                ["Daerah Diadu"]
+                                        bahagian_diadu: _foundAduan[i]
+                                                ["Bahagian Diadu"]
                                             .toString(),
                                         butir_aduan:
                                             _foundAduan[i]["Butir"].toString(),
