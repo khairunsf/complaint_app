@@ -10,13 +10,13 @@ Modules:
 - Login and register (incl forgot password function)
 - Complaint
 - Profile
-- Home and Setting (incl change password and change language function)
+- Home and Setting (incl change password and change language function)<br>
 Programming language: 
-- Dart
+- Dart<br>
 Frameworks: 
-- Flutter
+- Flutter<br>
 Database management tool: 
-- Firebase
+- Firebase<br>
 
 ## More Details
 - [App Interface Design](/document/mycomplaint_app_design.pdf)
